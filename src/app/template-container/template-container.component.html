@@ -1,0 +1,11 @@
+<p>template-container works!</p>
+
+<div *ngIf="flag; else temp">true conditionusing *ngIF</div>
+
+<ng-template #temp> false condition using else of *ngIf </ng-template>
+
+<ng-template [ngIf]="true" [ngIfElse]="temp1">
+  true conditionusing [ngIF]
+</ng-template>
+
+<ng-template #temp1> false condition using else of [ngIfElse] </ng-template>
